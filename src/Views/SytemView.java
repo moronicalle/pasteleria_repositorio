@@ -109,6 +109,7 @@ public class SytemView extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        wallpaper_cliente = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -135,6 +136,7 @@ public class SytemView extends javax.swing.JFrame {
         jTextField14 = new javax.swing.JTextField();
         jScrollPane4 = new javax.swing.JScrollPane();
         employee_table = new javax.swing.JTable();
+        wallpaper_empleados = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
@@ -159,6 +161,7 @@ public class SytemView extends javax.swing.JFrame {
         jTextField22 = new javax.swing.JTextField();
         jScrollPane5 = new javax.swing.JScrollPane();
         proveedores_table = new javax.swing.JTable();
+        wallpaper_proveedores = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -167,6 +170,19 @@ public class SytemView extends javax.swing.JFrame {
         jScrollPane7 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         jPanel13 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -320,7 +336,7 @@ public class SytemView extends javax.swing.JFrame {
 
         jLabelSetting.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelSetting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/gestion-de-archivos.png"))); // NOI18N
-        jLabelSetting.setText("Configuración");
+        jLabelSetting.setText("categoria");
 
         javax.swing.GroupLayout jPanelSettingLayout = new javax.swing.GroupLayout(jPanelSetting);
         jPanelSetting.setLayout(jPanelSettingLayout);
@@ -366,7 +382,7 @@ public class SytemView extends javax.swing.JFrame {
 
         getContentPane().add(Cabecera, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1000, 140));
 
-        jPanel2.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Productos:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
         jPanel3.setVerifyInputWhenFocusTarget(false);
@@ -386,15 +402,15 @@ public class SytemView extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("descripcion");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, -1, -1));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setText("Categoria:");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, -1, -1));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel14.setText("Id:");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, -1, -1));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, -1, -1));
 
         txt_codigo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jPanel3.add(txt_codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 150, 30));
@@ -407,29 +423,29 @@ public class SytemView extends javax.swing.JFrame {
 
         cmb_categories_product.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmb_categories_product.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "pedido local", "pedido delivery", "medido mayorista" }));
-        jPanel3.add(cmb_categories_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 180, 30));
+        jPanel3.add(cmb_categories_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 180, 30));
 
         txt_description_product.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel3.add(txt_description_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, 180, 30));
+        jPanel3.add(txt_description_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 180, 30));
 
         txt_id.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel3.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 180, 30));
+        jPanel3.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 180, 30));
 
         btn_register_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_register_product.setText("registrar");
-        jPanel3.add(btn_register_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 150, 30));
+        jPanel3.add(btn_register_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, 150, 30));
 
         btn_update_porduct.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_update_porduct.setText("modificar");
-        jPanel3.add(btn_update_porduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 80, 150, 30));
+        jPanel3.add(btn_update_porduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 80, 150, 30));
 
         btn_delete_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_delete_product.setText("Eliminar");
-        jPanel3.add(btn_delete_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 130, 150, 30));
+        jPanel3.add(btn_delete_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 150, 30));
 
         btn_cancel_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_cancel_product.setText("cancelar");
-        jPanel3.add(btn_cancel_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 180, 150, 30));
+        jPanel3.add(btn_cancel_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 150, 30));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel15.setText("Buscar:");
@@ -458,14 +474,14 @@ public class SytemView extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel15)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 928, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -597,34 +613,34 @@ public class SytemView extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel19.setText("telefono:");
-        jPanel15.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, 20));
+        jPanel15.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, -1, 20));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel20.setText("correo:");
-        jPanel15.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, 20));
-        jPanel15.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 160, 30));
-        jPanel15.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 160, 30));
-        jPanel15.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 160, 30));
-        jPanel15.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, 150, 30));
-        jPanel15.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 150, 30));
+        jPanel15.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, 20));
+        jPanel15.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 140, 30));
+        jPanel15.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 140, 30));
+        jPanel15.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 140, 30));
+        jPanel15.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, 130, 30));
+        jPanel15.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, 130, 30));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton5.setText("registrar");
-        jPanel15.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 40, 150, 30));
+        jPanel15.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 30, 150, 30));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("modificar");
-        jPanel15.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, 150, 30));
+        jPanel15.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 150, 30));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton7.setText("eliminar");
-        jPanel15.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 140, 150, 30));
+        jPanel15.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 130, 150, 30));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton8.setText("cancelar");
-        jPanel15.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 190, 150, 30));
+        jPanel15.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 150, 30));
 
-        jPanel4.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 240));
+        jPanel4.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 770, 240));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel21.setText("BUSCAR:");
@@ -655,7 +671,10 @@ public class SytemView extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTable1);
 
-        jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 920, 150));
+        jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 760, 150));
+
+        wallpaper_cliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wallpaper_pasteleria.png"))); // NOI18N
+        jPanel4.add(wallpaper_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 30, 150, 230));
 
         jTabbedPane1.addTab("cliente", jPanel4);
 
@@ -695,47 +714,47 @@ public class SytemView extends javax.swing.JFrame {
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel33.setText("direccion");
-        jPanel19.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
+        jPanel19.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel34.setText("telefono");
-        jPanel19.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+        jPanel19.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel35.setText("correo:");
-        jPanel19.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, -1, -1));
+        jPanel19.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel36.setText("clave");
-        jPanel19.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, -1, -1));
+        jPanel19.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
 
         jTextField11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel19.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 133, -1));
+        jPanel19.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 133, -1));
 
         jTextField12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel19.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 133, -1));
+        jPanel19.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 133, -1));
 
         jTextField13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel19.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 133, -1));
+        jPanel19.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 133, -1));
 
         btn_register_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_register_employee.setText("registrar");
-        jPanel19.add(btn_register_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 150, 30));
+        jPanel19.add(btn_register_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 150, 30));
 
         btn_update_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_update_employee.setText("modificar");
-        jPanel19.add(btn_update_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 150, 30));
+        jPanel19.add(btn_update_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 150, 30));
 
         btn_deleted_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_deleted_employee.setText("eliminar");
-        jPanel19.add(btn_deleted_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, 150, 30));
+        jPanel19.add(btn_deleted_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, 150, 30));
 
         btn_cancel_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_cancel_employee.setText("cancelar");
-        jPanel19.add(btn_cancel_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, 150, 30));
+        jPanel19.add(btn_cancel_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 150, 30));
 
         jPasswordField2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel19.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 130, -1));
+        jPanel19.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 130, -1));
 
         jLabel37.setText("BUSCAR:");
 
@@ -757,6 +776,8 @@ public class SytemView extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(employee_table);
 
+        wallpaper_empleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wallpaper_empleados.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -764,20 +785,24 @@ public class SytemView extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap(35, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 816, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 713, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel5Layout.createSequentialGroup()
                             .addComponent(jLabel37)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(149, Short.MAX_VALUE))
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(28, 28, 28)
+                .addComponent(wallpaper_empleados, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(wallpaper_empleados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel37)
@@ -825,40 +850,40 @@ public class SytemView extends javax.swing.JFrame {
 
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel42.setText("correo:");
-        jPanel16.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
+        jPanel16.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel43.setText("telefono:");
-        jPanel16.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, -1));
+        jPanel16.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         jTextField19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel16.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 130, -1));
+        jPanel16.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, 130, -1));
 
         jTextField20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jPanel16.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 130, -1));
+        jPanel16.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 130, -1));
 
         btn_register_proveedor.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_register_proveedor.setText("registrar");
-        jPanel16.add(btn_register_proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 30, 120, 25));
+        jPanel16.add(btn_register_proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 120, 25));
 
         btn_update_proveedor.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_update_proveedor.setText("modificar");
-        jPanel16.add(btn_update_proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 80, 120, 25));
+        jPanel16.add(btn_update_proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 120, 25));
 
         btn_proveedor_deleted.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_proveedor_deleted.setText("eliminar");
-        jPanel16.add(btn_proveedor_deleted, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, 120, 25));
+        jPanel16.add(btn_proveedor_deleted, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 120, 25));
 
         btn_proveedor_cancel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_proveedor_cancel.setText("cancelar");
-        jPanel16.add(btn_proveedor_cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 120, 25));
+        jPanel16.add(btn_proveedor_cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 120, 25));
 
         jLabel44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel44.setText("descripcion:");
-        jPanel16.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 130, -1, -1));
-        jPanel16.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 130, -1));
+        jPanel16.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, -1, -1));
+        jPanel16.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 130, -1));
 
-        jPanel7.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 870, 230));
+        jPanel7.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 680, 230));
 
         jLabel45.setText("BUSCAR:");
         jPanel7.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
@@ -882,11 +907,14 @@ public class SytemView extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(proveedores_table);
 
-        jPanel7.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 870, 150));
+        jPanel7.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 680, 150));
+
+        wallpaper_proveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wallpaper_proveedores.png"))); // NOI18N
+        jPanel7.add(wallpaper_proveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 240, 220));
 
         jTabbedPane1.addTab("proveedores", jPanel7);
 
-        jPanel11.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel11.setBackground(new java.awt.Color(255, 153, 153));
 
         jLabel46.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel46.setText("Ventas realizadas");
@@ -952,18 +980,87 @@ public class SytemView extends javax.swing.JFrame {
 
         jPanel13.setBackground(new java.awt.Color(255, 153, 153));
 
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Agrega la categoria:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setText("ID:");
+        jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setText("NOMBRE:");
+        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+
+        jTextField15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 110, -1));
+
+        jTextField16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 110, -1));
+
+        jButton9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton9.setText("registrar");
+        jPanel6.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 100, -1));
+
+        jButton10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton10.setText("modificar");
+        jPanel6.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 100, -1));
+
+        jButton11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton11.setText("eliminar");
+        jPanel6.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 100, -1));
+
+        jButton12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton12.setText("cancelar");
+        jPanel6.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 100, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("BUSCAR:");
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "NOMBRE"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable4);
+
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 475, Short.MAX_VALUE)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("configuraciones", jPanel13);
+        jTabbedPane1.addTab("categoria", jPanel13);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 1000, 510));
 
@@ -1030,6 +1127,9 @@ public class SytemView extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> cmb_proveedores;
     private javax.swing.JTable employee_table;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1037,6 +1137,7 @@ public class SytemView extends javax.swing.JFrame {
     public javax.swing.JButton jButton6;
     public javax.swing.JButton jButton7;
     public javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     public javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
@@ -1079,6 +1180,9 @@ public class SytemView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabelCustomers;
     public javax.swing.JLabel jLabelEmployees;
@@ -1099,6 +1203,7 @@ public class SytemView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     public javax.swing.JPanel jPanelCustomers;
     public javax.swing.JPanel jPanelEmployees;
@@ -1115,16 +1220,21 @@ public class SytemView extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     public javax.swing.JTable jTable2;
     public javax.swing.JTable jTable3;
+    public javax.swing.JTable jTable4;
     public javax.swing.JTextField jTextField1;
     public javax.swing.JTextField jTextField10;
     public javax.swing.JTextField jTextField11;
     public javax.swing.JTextField jTextField12;
     public javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
     public javax.swing.JTextField jTextField19;
     public javax.swing.JTextField jTextField2;
     public javax.swing.JTextField jTextField20;
@@ -1138,7 +1248,7 @@ public class SytemView extends javax.swing.JFrame {
     public javax.swing.JTextField jTextField8;
     public javax.swing.JTextField jTextField9;
     private javax.swing.JTable product_table;
-    private javax.swing.JTable proveedores_table;
+    public javax.swing.JTable proveedores_table;
     public javax.swing.JTable purchases_table;
     private javax.swing.JTextField txt_codigo;
     private javax.swing.JTextField txt_description_product;
@@ -1156,5 +1266,8 @@ public class SytemView extends javax.swing.JFrame {
     public javax.swing.JTextField txt_purchase_total;
     public javax.swing.JTextField txt_subtotal;
     private javax.swing.JTextField txt_unit_price;
+    private javax.swing.JLabel wallpaper_cliente;
+    private javax.swing.JLabel wallpaper_empleados;
+    private javax.swing.JLabel wallpaper_proveedores;
     // End of variables declaration//GEN-END:variables
 }
