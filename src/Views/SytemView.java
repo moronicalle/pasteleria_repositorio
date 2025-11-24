@@ -937,7 +937,7 @@ public class SytemView extends javax.swing.JFrame {
 
             },
             new String [] {
-                "factura", "proveedor", "total de compra", "fecha de compra"
+                "proveedor", "total de compra", "fecha de compra"
             }
         ));
         jScrollPane7.setViewportView(jTable3);
